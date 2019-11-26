@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class TravelwithusConfig(AppConfig):
+class TravelWithUsConfig(AppConfig):
     name = 'TravelWithUs'

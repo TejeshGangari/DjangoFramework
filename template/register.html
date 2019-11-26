@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Registration</title>
+
+</head>
+<body>
+    
+    <form action="register" method="POST">
+
+        {% csrf_token %}
+        <input type="text" name='custName' placeholder="Name"> <br>
+        <input type="text" name='custFirstName' placeholder="First Name"> <br>
+        <input type="text" name='custLastName' placeholder="Last Name"> <br>
+        <input type="text" name='custAddr' placeholder="Address"> <br>
+        <input type="number" name='custPhone' placeholder="Phone Number"> <br>
+        <input type="email" name='custEmail' placeholder="Email ID"> <br>
+        <input type="password" name='pass1' placeholder="Password"> <br>
+        <input type="password" name='pass2' placeholder="Confirm Password"> <br>
+        <input type="submit" name='sbmtbtn'>
+    </form>
+
+</body>
+</html>
