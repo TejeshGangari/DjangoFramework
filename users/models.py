@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import UserManager
 
 # Create your models here.
 
@@ -9,3 +10,4 @@ class Customers(models.Model):
     custAddr = models.TextField()
     custPhone = models.IntegerField(default=1234567890)
     custEmail = models.EmailField(default='abc@gmail.com')
+    objects = UserManager()
